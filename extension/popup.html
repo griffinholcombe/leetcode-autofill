@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>LeetCode Autocomplete</title>
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <img src="icons/icon48.png" alt="" width="28" height="28">
+    <div class="titles">
+      <h1>LeetCode Autocomplete</h1>
+      <p id="status" class="status" data-state="unknown"><span class="dot"></span><span id="statusText">Checking…</span></p>
+    </div>
+  </header>
+
+  <label class="row master">
+    <span class="text">
+      <span class="name">Autocomplete</span>
+      <span class="desc">Turn everything on or off</span>
+    </span>
+    <input type="checkbox" class="switch" data-key="enabled">
+  </label>
+
+  <section id="options">
+    <h2>Suggestions</h2>
+    <label class="row">
+      <span class="text">
+        <span class="name">Pop up while typing</span>
+        <span class="desc">Off: only with <kbd>Ctrl</kbd>+<kbd>Space</kbd></span>
+      </span>
+      <input type="checkbox" class="switch" data-key="autoPopup">
+    </label>
+    <label class="row">
+      <span class="text">
+        <span class="name">Type-aware methods</span>
+        <span class="desc">After <code>.</code>, list only what the variable's type has</span>
+      </span>
+      <input type="checkbox" class="switch" data-key="typeAware">
+    </label>
+    <label class="row">
+      <span class="text">
+        <span class="name">Names from my code</span>
+        <span class="desc">Variables, functions and params you've written</span>
+      </span>
+      <input type="checkbox" class="switch" data-key="identifiers">
+    </label>
+    <label class="row">
+      <span class="text">
+        <span class="name">Snippets</span>
+        <span class="desc">Loop, function and lambda templates</span>
+      </span>
+      <input type="checkbox" class="switch" data-key="snippets">
+    </label>
+    <label class="row">
+      <span class="text">
+        <span class="name">Enter accepts</span>
+        <span class="desc">Off: only <kbd>Tab</kbd> accepts, Enter makes a new line</span>
+      </span>
+      <input type="checkbox" class="switch" data-key="enterAccepts">
+    </label>
+  </section>
+
+  <footer>Changes apply instantly. Private: your code never leaves this page, nothing is sent anywhere, and only these switches are saved, on this device.</footer>
+
+  <script src="defaults.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
