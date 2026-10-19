@@ -2,9 +2,11 @@
   "manifest_version": 3,
   "name": "LeetCode Autocomplete",
   "version": "1.1.1",
-  "description": "Classic IDE-style autocomplete in the LeetCode editor: type-aware methods, keywords, stdlib, snippets, your own identifiers. No AI, no data collection.",
+  "description": "IDE-style autocomplete for LeetCode: type-aware methods, keywords, snippets. No AI, no setup, no data collection.",
   "minimum_chrome_version": "111",
-  "permissions": ["storage"],
+  "permissions": [
+    "storage"
+  ],
   "content_security_policy": {
     "extension_pages": "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'"
   },
@@ -24,13 +26,25 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://leetcode.com/*", "https://leetcode.cn/*"],
-      "js": ["defaults.js", "bridge.js"],
+      "matches": [
+        "https://leetcode.com/*",
+        "https://leetcode.cn/*"
+      ],
+      "js": [
+        "defaults.js",
+        "bridge.js"
+      ],
       "run_at": "document_start"
     },
     {
-      "matches": ["https://leetcode.com/*", "https://leetcode.cn/*"],
-      "js": ["core.js", "inject.js"],
+      "matches": [
+        "https://leetcode.com/*",
+        "https://leetcode.cn/*"
+      ],
+      "js": [
+        "core.js",
+        "inject.js"
+      ],
       "run_at": "document_idle",
       "world": "MAIN"
     }

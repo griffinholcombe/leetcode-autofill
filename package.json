@@ -4,7 +4,7 @@
   "private": true,
   "description": "Classic IDE-style autocomplete for the LeetCode code editor. No AI, no data collection.",
   "scripts": {
-    "test": "node tests/completion.test.js && node tests/security.test.js",
+    "test": "node tests/manifest.test.js && node tests/completion.test.js && node tests/security.test.js",
     "package": "bash scripts/package.sh"
   },
   "license": "MIT"

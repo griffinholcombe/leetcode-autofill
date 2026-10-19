@@ -13,8 +13,8 @@ Upload `dist/leetcode-autocomplete-<version>.zip`. Bump `version` in `extension/
 
 **Name:** LeetCode Autocomplete
 
-**Summary** (132 characters max):
-Classic IDE-style autocomplete for LeetCode: type-aware methods, keywords, snippets. No AI, no setup, no data collection.
+**Summary:** comes from `description` in `extension/manifest.json` (132 characters max; `npm test` checks this):
+IDE-style autocomplete for LeetCode: type-aware methods, keywords, snippets. No AI, no setup, no data collection.
 
 **Category:** Developer Tools
 
