@@ -40,14 +40,8 @@ typing. There is nothing to configure.
 
 ### Languages
 
-| Language | Type-aware methods | Keywords, library names, snippets |
-|---|:---:|:---:|
-| Python | ✓ | ✓ |
-| C++ | ✓ | ✓ |
-| Java | ✓ | ✓ |
-| JavaScript | ✓ | ✓ |
-| TypeScript | ✓ | ✓ |
-| C, C#, Go, Rust, Kotlin, Swift | general list | ✓ |
+It works in every language LeetCode offers. Type-aware method suggestions are available in Python, C++, Java,
+JavaScript and TypeScript; the other languages get a general method list after a dot.
 
 ### How types are worked out
 

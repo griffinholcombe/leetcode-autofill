@@ -18,21 +18,22 @@ IDE-style autocomplete for LeetCode: type-aware methods, keywords, snippets. No 
 
 **Category:** Developer Tools
 
-**Description:**
-LeetCode's editor doesn't give you the autocomplete you're used to from an IDE. This extension adds it.
+**Description** (plain text, paste as is; no tables, checkmarks or lists of names, which the store treats as keyword spam):
 
-• Suggestions as you type: keywords, standard-library names, and the variables you've already written
-• Type-aware methods: nums. shows list methods, s. shows string methods, heapq. shows heapq functions
-• Snippets for common loops and functions
-• Python, C++, Java, JavaScript and TypeScript get type-aware suggestions; C, C#, Go, Rust, Kotlin and Swift get keywords, library names and snippets
-• Works the moment it's installed. Optional switches in the toolbar popup
+LeetCode's code editor doesn't give you the autocomplete you're used to from an IDE. This extension adds it.
 
-It's not AI and doesn't write code for you. It only completes what you're typing.
+As you type, a suggestion list appears with the language's keywords, common standard-library functions and the variables you've already written. Press Tab or Enter to accept a suggestion.
 
-Private by design: your code never leaves the page, nothing is sent anywhere, and the only thing stored is your on/off switches, on your device.
+When you type a dot after a variable, the list shows only the methods that variable actually has. A list shows list methods, a string shows string methods, and a hash map shows map methods. Short templates for common loops and functions are included too.
 
-**Assets you still need to make:** at least one screenshot (1280×800 or 640×400) of suggestions open in the
-LeetCode editor, and a 440×280 small promo tile. The 128×128 icon is `extension/icons/icon128.png`.
+It works in every language LeetCode offers, with the type-aware method suggestions in the most popular ones. It is not AI and never writes code for you. It only completes what you're typing.
+
+Everything works as soon as it's installed. If you want to change anything, click the toolbar icon to turn individual features on or off.
+
+Your privacy: your code never leaves the page, nothing is collected or sent anywhere, and the only thing saved is your on/off settings, on your own device.
+
+**Screenshots:** three 1280×800 screenshots have been made. Optional: a 440×280 small promo tile.
+The 128×128 icon is `extension/icons/icon128.png`.
 
 ## Privacy practices tab
 
